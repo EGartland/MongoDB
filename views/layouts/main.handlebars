@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>NYT Sports Scraper</title>
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<!-- Custom styles for this template -->
+<style type="text/css">
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    body {
+        padding-top: 2rem;
+        background: rgb(255, 255, 255);
+        color :#1b405a;
+        font-family: 'Roboto', serif;
+    }
+
+    .jumbotron {
+        background: rgb(255, 255, 255);
+        background-image: url("http://www.mediabuyers.com/wp-content/uploads/2016/04/banner_np.png");
+        background-size: cover;
+    }
+
+    #jumboText { 
+        text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
+    }
+    .dontshow {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="notes-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Article Notes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--This is where the saved notes retrieved from the db will go-->
+                    <div class="row" id="note-layer">
+                        <!-- Hidden note Layer for cloning -->
+                        <div class="col-12 saved-note dontshow" id="note-template">
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <button type="button" class="close note-delete" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div id="note-text-area">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>                      
+                    </div>
+
+                    <form id="note-form">
+                        <input type="hidden" value="" id="articleID" name="articleID">
+                        <input type="hidden" value="" id="noteID" name="noteID">
+                        <div class="form-group">
+                            <label for="note-title">Note Title</label>
+                            <input type="email" class="form-control" id="note-title" name="note-title" placeholder="Give your note a quick title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="note-body">Notes</label>
+                            <textarea class="form-control" id="note-body" name="note-body" rows="3" required></textarea>
+                        </div>
+                    </form>                    
+                </div>
+
+                <div class="modal-footer">
+                    <div class="col-10" id="update-controls">
+                        <button type="button" class="btn btn-primary" id="update-note">Update Note</button>
+                        <button type="button" class="btn btn-primary" id="new-note">New Note</button>
+                    </div>
+                    <div class="col-10" id="save-controls">
+                        <button type="button" class="btn btn-primary" id="save-note">Save Note</button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- nav and jumbotron div are not in a container for edge to edge display -->
+
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-light" style="background-color: #1b405a;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="scrape-link">Scrape</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="articles-link">Saved Articles</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container text-right" id="jumboText">
+            <h1 class="display-3">New York Times Sports Scraper</h1>
+        </div>
+    </div>
+
+    <!-- main content container -->
+    <div class="container">
+        {{{ body }}}
+	
+        <hr>
+    </div> <!-- end main content container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

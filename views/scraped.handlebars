@@ -1,0 +1,19 @@
+<div class="row" id="scraped-articles">
+    {{#each scrapedArticles}}
+    <div class="col-md-12 article">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>{{title}}</h3>
+                <h6>{{summary}}</h6>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-primary" href="{{link}}" role="button">Read Article</a>
+                    <a class="btn btn-sm btn-outline-info save-article" data-title="{{title}}" data-href="{{link}}" href="#" role="button">Save Article</a>
+                </div>
+            </div>
+        </div>
+        <div class="row"><div class="col-md-12"><hr></div></div>
+    </div>
+    {{/each}}
+</div>
