@@ -1,5 +1,5 @@
 {
-  "name": "MongoScraper",
+  "name": "mongodb",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rtemplo/MongoScraper.git"
+    "url": "git+https://github.com/EGartland/MongoDB.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rtemplo/MongoScraper/issues"
+    "url": "https://github.com/EGartland/MongoDB/issues"
   },
-  "homepage": "https://github.com/rtemplo/MongoScraper#readme",
+  "homepage": "https://github.com/EGartland/MongoDB#readme",
   "dependencies": {
     "axios": "^0.17.0",
     "body-parser": "^1.18.2",

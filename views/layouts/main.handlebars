@@ -5,13 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>NYT Sports Scraper</title>
 
-<!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">    
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<!-- Custom styles for this template -->
+
 <style type="text/css">
-    /* Move down content because we have a fixed navbar that is 50px tall */
+
     body {
         padding-top: 2rem;
         background: rgb(255, 255, 255);
@@ -67,11 +66,11 @@
                         <input type="hidden" value="" id="noteID" name="noteID">
                         <div class="form-group">
                             <label for="note-title">Note Title</label>
-                            <input type="email" class="form-control" id="note-title" name="note-title" placeholder="Give your note a quick title" required>
+                            <input type="email" class="form-control" id="note-title" name="note-title" placeholder="Note title" required>
                         </div>
                         <div class="form-group">
                             <label for="note-body">Notes</label>
-                            <textarea class="form-control" id="note-body" name="note-body" rows="3" required></textarea>
+                            <textarea class="form-control" id="note-body" name="note-body" placeholder="Note message" rows="3" required></textarea>
                         </div>
                     </form>                    
                 </div>
@@ -92,7 +91,7 @@
         </div>
     </div>    
 
-    <!-- nav and jumbotron div are not in a container for edge to edge display -->
+{{!-- Jumbo --}}
 
     <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-light" style="background-color: #1b405a;">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -129,7 +128,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>    
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
     <script src="/js/app.js"></script>
 </body>
