@@ -1,5 +1,5 @@
 var PORT = process.env.PORT || 8080;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongodb";
 
 // Dependencies
 var express = require("express");
