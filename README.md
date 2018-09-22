@@ -36,17 +36,6 @@ This is a Node.js application that utilizes Cheerio and a MongoDB back-end to sc
 
 3) Navigate to the appropriate folder, and install all required packages ('mongojs', 'express', 'express-handlebars', 'body-parser', 'express-handlebars', 'cheerio', 'mongoose', 'morgan', 'axios', and 'handlebars'). 
 
-   "axios": "^0.17.0",
-    "body-parser": "^1.18.2",
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.2",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.11",
-    "mocha": "^5.2.0",
-    "mongojs": "^2.4.1",
-    "mongoose": "^4.12.4",
-    "morgan": "^1.9.0"
-
 4) Run the command *npm i* to install node modules.
 
 5) Then run node server.js, open your web browser, and navigate to your *localhost*.
