@@ -31,18 +31,6 @@ module.exports = function(app, axios, cheerio) {
               });
 
             res.render("scraped", {scrapedArticles:scrapedArticlesArr});
-
-            /*
-            Leaving the commented out code below for future reference on how to bulk load data to Mongo via Mongoose
-            */
-            // Create a new the all the articles all at once with the articlesToSaveObj array
-            // db.Article.create(scrapedArticlesArr).then(function(dbArticle) {
-            //     // Send the number of articles that were saved
-            //     res.json({saved:dbArticle.length });
-            // }).catch(function(err) {
-            //     res.json(err);
-            // });            
-
         });
 
     });
