@@ -1,0 +1,10 @@
+{
+language: java,
+services: "mongodb",
+branches:
+  only:
+  - master,
+cache:
+  directories:
+    - node_modules
+}
