@@ -1,4 +1,4 @@
-# MongoScraper
+# NYT Sports Scraper
 
 [![Build Status](https://travis-ci.com/EGartland/Group-Project-2.svg?branch=master)](https://travis-ci.com/EGartland/Group-Project-2)
 
