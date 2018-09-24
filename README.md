@@ -47,12 +47,12 @@ This is a Node.js application that utilizes Cheerio and a MongoDB back-end to sc
 
 #### Scrape for Most Recent Articles
 
-![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/CreateEmployee.gif)
+![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/scrapeArticles.gif)
 
-#### View Saves Articles
+#### View Saved Articles
 
-![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/PlaceOrder.gif)
+![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/savedArticles.gif)
 
 #### Leave/View Comments
 
-![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/Courier.gif)
+![Output Sample](https://github.com/EGartland/mongoDB/blob/master/public/img/comments.gif)
